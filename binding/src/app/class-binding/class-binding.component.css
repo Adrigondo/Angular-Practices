@@ -1,0 +1,10 @@
+.text--special {
+    font-style: italic;
+    letter-spacing: -1px;
+}
+.text--success {
+    color: rgb(38, 170, 38);
+}
+.text--error {
+    color: rgb(183, 32, 57);
+}

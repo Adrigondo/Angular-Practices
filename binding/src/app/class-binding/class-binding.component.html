@@ -1,0 +1,17 @@
+<div>
+    <h2>
+        5 - Class binding practice
+    </h2>
+
+    <!-- Set class by property bind -->
+    <h3 [class]="successClass">Hello {{user.name}}</h3>
+
+    <!-- Set class by a boolean -->
+    <h3 [class.text--success]="!hasError" [class.text--error]="hasError">Hello {{user.name}}</h3>
+
+    <!-- Set class by a list of clases when the class has a true value -->
+    <h3 [ngClass]="messageClasses">Hello {{user.name}}</h3>
+    
+    <button (click)="setSpecial()">Change special class</button>
+    <button (click)="setError()">Change error class</button>
+</div>
