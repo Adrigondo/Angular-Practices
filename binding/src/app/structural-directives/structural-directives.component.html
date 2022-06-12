@@ -1,0 +1,38 @@
+<div class="">
+    <h2>8 - Structural directives practice</h2>
+    <h3>> ngIf directive</h3>
+    <label for="fries">Do you want extra fries?</label>
+    <input [(ngModel)]="check" type="checkbox" name="fries" id="">
+    <h4>
+        <div *ngIf="check; then: content; else: disable"></div>
+        <ng-template #content> Extra fries added </ng-template>
+        <ng-template #disable> Without extra fries </ng-template>
+    </h4>
+    <br>
+
+    <h3>> ngSwitch directive</h3>
+    <input [(ngModel)]="option" type="radio" name="option" id="red" value="red">
+    <label for="red">Red</label>
+    <input [(ngModel)]="option" type="radio" name="option" id="blue" value="blue">
+    <label for="blue">Blue</label>
+    <input [(ngModel)]="option" type="radio" name="option" id="green" value="green">
+    <label for="gren">Green</label>
+    
+    <h4 [ngSwitch]="option">
+        The selected color is
+        <label *ngSwitchCase="'red'" class="red">red</label>
+        <label *ngSwitchCase="'blue'" class="blue">blue</label>
+        <label *ngSwitchCase="'green'" class="green">green</label>
+        <label *ngSwitchDefault class="info">(Nothing color selected yet)</label>
+    </h4>
+    <br>
+
+    <h3>> ngFor directive</h3>
+    <input #newGuest type="text" name="newGuest" id="">
+    <button (click)="addGuest(newGuest.value)">Add guest</button>
+    <button (click)="removeGuest(newGuest.value)">Remove guest</button>
+    <h4>Guest list:</h4>
+    <div *ngFor="let guest of guests; index as i">
+        <p>{{i+1}}) {{guest}} </p>
+    </div>
+</div>

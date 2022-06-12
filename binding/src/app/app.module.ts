@@ -9,6 +9,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TemplateReferenceVarsComponent } from './template-reference-vars/template-reference-vars.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TemplateReferenceVarsComponent } from './template-reference-vars/templa
     PropertyBindingComponent,
     ClassBindingComponent,
     EventBindingComponent,
-    TemplateReferenceVarsComponent
+    TemplateReferenceVarsComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,
