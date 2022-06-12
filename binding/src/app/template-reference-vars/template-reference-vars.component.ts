@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateReferenceVarsComponent implements OnInit {
   public greeting="";
+  public name_2="";
 
   constructor() { }
 
