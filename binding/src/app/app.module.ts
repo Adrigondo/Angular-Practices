@@ -7,6 +7,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TemplateReferenceVarsComponent } from './template-reference-vars/template-reference-vars.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     InterpolationComponent,
     PropertyBindingComponent,
     ClassBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TemplateReferenceVarsComponent
   ],
   imports: [
     BrowserModule,
