@@ -1,0 +1,15 @@
+<div class="">
+    <!-- Property binding: [disabled]="isDisable" -->
+    <input type="text" name="" id="name" value="Hinata" [disabled]="isDisable" #name>
+    <button (click)="getAttributeValue()" [disabled]="isDisable">See attribute value</button>
+    <button (click)="getPropertyValue()" [disabled]="isDisable">See property value</button>
+    <button (click)="disableInput()">Disable the input</button>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>{{attribute_value}}</td>
+            <td>{{property_value}}</td>
+        </tr>
+    </table>
+</div>
