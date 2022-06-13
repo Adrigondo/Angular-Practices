@@ -1,0 +1,8 @@
+<div>
+    <h2>10 - Component interaction</h2>
+    <div *ngIf="status==='not loggin'">
+        <label for="">Insert your name</label>
+        <input #name type="text" name="name" id="">
+        <button (click)="setTitle(name.value)">Set in title</button>
+    </div>
+</div>

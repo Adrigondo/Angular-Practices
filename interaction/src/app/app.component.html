@@ -1,0 +1,12 @@
+<div class="">
+    <div *ngIf="name; then:then_block; else:else_block"></div>
+    <ng-template #then_block>
+        <h1>{{name}}, welcome to the app</h1>
+    </ng-template>
+    <ng-template #else_block>
+        <h1>Welcome to the app</h1>
+    </ng-template>
+    <button (click)="loggin()">Loggin</button>
+    <button (click)="unloggin()">Unloggin</button>
+    <app-input-output-interaction (childrenEvent)="setTitle($event)" [dataParent]="status"></app-input-output-interaction>
+</div>
