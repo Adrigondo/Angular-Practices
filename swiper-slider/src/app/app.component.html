@@ -1,0 +1,19 @@
+<swiper-container #swiperRef init="false">
+  <swiper-slide *ngFor="let item of items">
+    <div>
+      {{ item.number }}
+      <h3>{{ item.title }}</h3>
+    </div>
+  </swiper-slide>
+</swiper-container>
+<div class="bar-box">
+  <div class="bar-background">
+    <div class="bar" style="width: {{ getPercentage(currentIndex + 1 - percentage) + '%' }};"></div>
+  </div>
+  <div class="bar-background">
+    <div class="bar" style="width: {{ getPercentage(currentIndex - percentage) + '%' }};"></div>
+  </div>
+  <div class="bar-background">
+    <div class="bar" style="width: {{ getPercentage(currentIndex - 1 - percentage)+ '%' }};"></div>
+  </div>
+</div>
